@@ -1,0 +1,20 @@
+
+
+<input type="text" [(ngModel)]="fullname" (input)="change()" >
+&nbsp;
+<input type="text" [(ngModel)]="age"  (input)="change()">
+
+<div>
+  <ul>
+    <li *ngFor="let ref of itemArray2">
+      {{ref.id}} &nbsp; &nbsp; 
+      {{ref.fullname}} &nbsp;&nbsp; 
+      {{ref.age}} &nbsp;&nbsp; 
+      {{ref.salary}} &nbsp;&nbsp; 
+    </li>
+  </ul>
+  </div>
+
+<div>
+  {{obj | json}}
+</div>
